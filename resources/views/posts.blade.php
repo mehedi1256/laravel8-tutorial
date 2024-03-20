@@ -9,25 +9,11 @@
     <link rel="stylesheet" href="/app.css" >
 </head>
 <body>
-<article>
-    <h1><a href="/posts/my-first-post">My first posts</a></h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores distinctio dolorem enim, fuga fugit laudantium obcaecati pariatur, possimus quisquam quod repellendus repudiandae vero vitae? Assumenda aut corporis debitis dolor enim est eum fuga, incidunt ipsum labore maiores, non, odio officia perferendis praesentium provident quia quis quod similique totam ut veniam!
-    </p>
-</article>
+    <?php foreach($posts as $post): ?>
+    <article>
+        <?= $post ?>
+    </article>
+    <?php endforeach; ?>
 
-<article>
-    <h1><a href="/posts/my-second-post">My Second posts</a></h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores distinctio dolorem enim, fuga fugit laudantium obcaecati pariatur, possimus quisquam quod repellendus repudiandae vero vitae? Assumenda aut corporis debitis dolor enim est eum fuga, incidunt ipsum labore maiores, non, odio officia perferendis praesentium provident quia quis quod similique totam ut veniam!
-    </p>
-</article>
-
-<article>
-    <h1><a href="/posts/my-third-post">My Third posts</a></h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores distinctio dolorem enim, fuga fugit laudantium obcaecati pariatur, possimus quisquam quod repellendus repudiandae vero vitae? Assumenda aut corporis debitis dolor enim est eum fuga, incidunt ipsum labore maiores, non, odio officia perferendis praesentium provident quia quis quod similique totam ut veniam!
-    </p>
-</article>
 </body>
 </html>
